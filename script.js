@@ -136,6 +136,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const nextTextIndex = Math.min(noClickCount, noPhrases.length - 1);
         btnNo.textContent = noPhrases[nextTextIndex];
 
+        // Update proposal bear image to become progressively sadder
+        const proposalImg = document.querySelector('#screen-proposal .illustration');
+        if (proposalImg) {
+            if (noClickCount >= 1 && noClickCount < 4) {
+                proposalImg.src = 'assets/sad_bear_1.png';
+            } else if (noClickCount >= 4) {
+                proposalImg.src = 'assets/sad_bear_2.png';
+            }
+        }
+
         // Grow YES button using padding and font-size to prevent card overlap
         const baseFontSize = 18;
         const basePaddingV = 14;
