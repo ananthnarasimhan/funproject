@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question for Smerithee 💖</title>
+    <!-- Google Fonts for cute and modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- canvas-confetti library for high-quality celebrations -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- Floating Hearts Background Container -->
+    <div class="floating-hearts" id="hearts-container"></div>
+
+    <main class="app-container">
+        <!-- SCREEN 1: Envelope Letter -->
+        <section class="screen active" id="screen-envelope">
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="flap"></div>
+                    <div class="pocket"></div>
+                    <div class="letter">
+                        <div class="letter-content">
+                            <p class="handwritten">To Smerithee</p>
+                            <p class="click-prompt">Click to open 💖</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="envelope-shadow"></div>
+            </div>
+            <h1 class="envelope-heading">Smerithee, you have a letter... 💌</h1>
+        </section>
+
+        <!-- SCREEN 2: The Proposal -->
+        <section class="screen" id="screen-proposal">
+            <div class="card glassmorphism proposal-card">
+                <div class="image-container">
+                    <img src="assets/proposal_bear.png" alt="Cute proposal bear" class="illustration pulse-img">
+                </div>
+                <h1 class="proposal-heading text-pink">Will you go on a date with me when you come to the Bay Area? 👉👈</h1>
+                
+                <div class="button-group">
+                    <button id="btn-yes" class="btn btn-yes">YES! 🥰</button>
+                    <button id="btn-no" class="btn btn-no">No 😢</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREEN 3: Celebration -->
+        <section class="screen" id="screen-celebration">
+            <div class="card glassmorphism celebration-card">
+                <div class="image-container">
+                    <img src="assets/happy_bear.png" alt="Happy celebrating bear" class="illustration jump-img">
+                </div>
+                <h1 class="celebration-heading text-pink">YAYYY! It's a date! 💖🎉</h1>
+                <p class="subtitle">I can't wait to see you, Smerithee! 🥰</p>
+
+                <div class="action-buttons">
+                    <button id="btn-send-whatsapp" class="btn btn-whatsapp">Send me a message! 💬</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
