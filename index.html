@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Special Question for Smerithee 💖</title>
+    <title>A Little Reminder for Smerithee 💛</title>
     <!-- Google Fonts for cute and modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <!-- Floating Hearts Background Container -->
+    <!-- Floating Hearts & Bananas Background Container -->
     <div class="floating-hearts" id="hearts-container"></div>
 
     <main class="app-container">
@@ -26,41 +26,32 @@
                     <div class="letter">
                         <div class="letter-content">
                             <p class="handwritten">To Smerithee</p>
-                            <p class="click-prompt">Click to open 💖</p>
+                            <p class="click-prompt">Click to open 💛</p>
                         </div>
                     </div>
                 </div>
                 <div class="envelope-shadow"></div>
             </div>
-            <h1 class="envelope-heading">Smerithee, you have a letter... 💌</h1>
+            <h1 class="envelope-heading">Smerithee, you have a message... 💌</h1>
         </section>
 
-        <!-- SCREEN 2: The Proposal -->
-        <section class="screen" id="screen-proposal">
-            <div class="card glassmorphism proposal-card">
+        <!-- SCREEN 2: The Motivational Cheer Card -->
+        <section class="screen" id="screen-cheer">
+            <div class="card glassmorphism cheer-card">
                 <div class="image-container">
-                    <img src="assets/proposal_bear.png" alt="Cute proposal bear" class="illustration pulse-img">
+                    <img src="assets/minion_support.png" alt="Cute cheering minion" class="illustration pulse-img">
                 </div>
-                <h1 class="proposal-heading text-pink">Will you go on a date with me when you come to the Bay Area? 👉👈</h1>
+                <h1 class="cheer-heading text-yellow">You got this, Smerithee! 🌟</h1>
+                
+                <!-- Encouragement Quote Display -->
+                <div class="quote-container">
+                    <div id="quote-display" class="quote-box">
+                        Remember: You are one in a Minion! 💛🍌
+                    </div>
+                </div>
                 
                 <div class="button-group">
-                    <button id="btn-yes" class="btn btn-yes">YES! 🥰</button>
-                    <button id="btn-no" class="btn btn-no">No 😢</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- SCREEN 3: Celebration -->
-        <section class="screen" id="screen-celebration">
-            <div class="card glassmorphism celebration-card">
-                <div class="image-container">
-                    <img src="assets/happy_bear.png" alt="Happy celebrating bear" class="illustration jump-img">
-                </div>
-                <h1 class="celebration-heading text-pink">YAYYY! It's a date! 💖🎉</h1>
-                <p class="subtitle">I can't wait to see you, Smerithee! 🥰</p>
-
-                <div class="action-buttons">
-                    <button id="btn-send-whatsapp" class="btn btn-whatsapp">Send me a message! 💬</button>
+                    <button id="btn-cheer" class="btn btn-cheer">Cheer me up! 🍌</button>
                 </div>
             </div>
         </section>
