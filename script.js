@@ -130,8 +130,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const quoteDisplay = document.getElementById('quote-display');
 
     btnCheer.addEventListener('click', () => {
-        // Cycle sequentially to next quote
-        currentQuoteIndex = (currentQuoteIndex + 1) % motivationalQuotes.length;
+        // Select a random quote, ensuring it does not repeat the current one twice in a row
+        let newIndex;
+        do {
+            newIndex = Math.floor(Math.random() * motivationalQuotes.length);
+        } while (newIndex === currentQuoteIndex && motivationalQuotes.length > 1);
+        
+        currentQuoteIndex = newIndex;
         
         // Add pop animations
         quoteDisplay.classList.add('quote-pop');
